@@ -13,13 +13,52 @@ $header-texto: #ccc; //Color del texto del header
 $footer: $color-primario;
 $footer-texto: white;
 
+//Ancho máximao de pantalla
+$larguraMaxTela: 1920px;
+
+h1 {font-size: 2.85rem !important;}
+h2 {font-size: 2rem !important;}
+h3 {font-size: 1.65rem !important;}
+h4 {font-size: 1.45rem !important;}
+p {font-size: 1.15rem !important;}
+
+$mobile-h1-font-size: 1.8rem !important;
+$mobile-h2-font-size: 1.8rem !important;
+$mobile-h3-font-size: 1.5rem !important;
+$mobile-h4-font-size: 1.25rem !important;
+$mobile-p-font-size: 1rem !important;
+@media (max-width: 600px) {
+  h1 { font-size: $mobile-h1-font-size; }
+  h2 { font-size: $mobile-h2-font-size; }
+  h3 { font-size: $mobile-h3-font-size; }
+  h4 { font-size: $mobile-h4-font-size; }
+  p { font-size: $mobile-p-font-size; }
+}
+
+
+html {
+  height: max-content;
+  body {
+    height: 100%;
+    overflow-x: hidden;
+    max-width: $larguraMaxTela;
+    margin: auto;
+    #content {
+      height: 100%;
+      display: flow-root;
+      .row {
+        padding-top: 0px;
+      }
+    }
+  }
+}
+
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/blur-cellphone-close-up-device-196646.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
   nav {
     background-color: transparent;
     box-shadow: none;
