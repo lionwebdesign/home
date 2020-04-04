@@ -1,0 +1,83 @@
+//Colores principales
+$color-primario: #262626;
+$color-secundario: #fff;
+$color-destaque: #ff671f;
+
+//caracteristicas del header
+
+$header: $color-primario; // Color del header
+$header-texto: #ccc; //Color del texto del header
+
+//caracteristicas del footer
+
+$footer: $color-primario;
+$footer-texto: white;
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/blur-cellphone-close-up-device-196646.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+    ul {
+      li {
+        a {
+          color: $header-texto;
+          &:hover {
+            color: $color-secundario;
+          }
+        }
+      }
+    }
+  }
+
+  .texto-principal {
+    color: white;
+    text-align: center;
+  }
+
+  .diferenciales {
+    color: white;
+    padding: 25px;
+    .col {
+      width: 33%;
+      .diferencial {
+        margin: auto !important;
+        width: 200px;
+        .img-diferencial {
+          margin: auto;
+          max-width: 150px;
+        }
+      }
+    }
+  }
+
+  .action-call {
+    color: white;
+  }
+
+  .page-footer{
+      background-color: $footer !important;
+      color: $footer-texto !important;
+      ul {
+          li{
+              a{
+                  color: darken($footer-texto, 15%) !important;
+              }
+          }
+      }
+      .footer-copyright {
+          background-color: darken($footer, 15%) !important;
+          color: $footer-texto !important;
+          div {
+              a {
+                color: darken($footer-texto, 15%) !important;
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,68 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/blur-cellphone-close-up-device-196646.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blur-cellphone-close-up-device-196646.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body nav {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body nav ul li a {
+  color: #ccc;
+}
+
+body nav ul li a:hover {
+  color: #fff;
+}
+
+body .texto-principal {
+  color: white;
+  text-align: center;
+}
+
+body .diferenciales {
+  color: white;
+  padding: 25px;
+}
+
+body .diferenciales .col {
+  width: 33%;
+}
+
+body .diferenciales .col .diferencial {
+  margin: auto !important;
+  width: 200px;
+}
+
+body .diferenciales .col .diferencial .img-diferencial {
+  margin: auto;
+  max-width: 150px;
+}
+
+body .action-call {
+  color: white;
+}
+
+body .page-footer {
+  background-color: #262626 !important;
+  color: white !important;
+}
+
+body .page-footer ul li a {
+  color: #d9d9d9 !important;
+}
+
+body .page-footer .footer-copyright {
+  background-color: black !important;
+  color: white !important;
+}
+
+body .page-footer .footer-copyright div a {
+  color: #d9d9d9 !important;
+}
+/*# sourceMappingURL=style.css.map */
