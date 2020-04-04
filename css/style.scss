@@ -44,13 +44,27 @@ body {
     color: white;
     padding: 25px;
     .col {
-      width: 33%;
+      width: 33.333%;
       .diferencial {
         margin: auto !important;
         width: 200px;
         .img-diferencial {
           margin: auto;
           max-width: 150px;
+        }
+      }
+    }
+    @media(max-width: 600px) {
+      .col {
+        margin-bottom: 25px;
+        width: 100%;
+        .diferencial {
+          margin: auto !important;
+          width: 200px;
+          .img-diferencial {
+            margin: auto;
+            max-width: 150px;
+          }
         }
       }
     }

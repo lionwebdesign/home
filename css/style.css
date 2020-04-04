@@ -31,7 +31,7 @@ body .diferenciales {
 }
 
 body .diferenciales .col {
-  width: 33%;
+  width: 33.333%;
 }
 
 body .diferenciales .col .diferencial {
@@ -42,6 +42,21 @@ body .diferenciales .col .diferencial {
 body .diferenciales .col .diferencial .img-diferencial {
   margin: auto;
   max-width: 150px;
+}
+
+@media (max-width: 600px) {
+  body .diferenciales .col {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  body .diferenciales .col .diferencial {
+    margin: auto !important;
+    width: 200px;
+  }
+  body .diferenciales .col .diferencial .img-diferencial {
+    margin: auto;
+    max-width: 150px;
+  }
 }
 
 body .action-call {
