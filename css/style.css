@@ -20,19 +20,19 @@ p {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem !important !important;
   }
   h2 {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem !important !important;
   }
   h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem !important !important;
   }
   h4 {
-    font-size: 1.25rem !important;
+    font-size: 1.25rem !important !important;
   }
   p {
-    font-size: 1rem !important;
+    font-size: 1rem !important !important;
   }
 }
 

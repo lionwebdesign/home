@@ -28,11 +28,11 @@ $mobile-h3-font-size: 1.5rem !important;
 $mobile-h4-font-size: 1.25rem !important;
 $mobile-p-font-size: 1rem !important;
 @media (max-width: 600px) {
-  h1 { font-size: $mobile-h1-font-size; }
-  h2 { font-size: $mobile-h2-font-size; }
-  h3 { font-size: $mobile-h3-font-size; }
-  h4 { font-size: $mobile-h4-font-size; }
-  p { font-size: $mobile-p-font-size; }
+  h1 { font-size: $mobile-h1-font-size !important; }
+  h2 { font-size: $mobile-h2-font-size !important; }
+  h3 { font-size: $mobile-h3-font-size !important; }
+  h4 { font-size: $mobile-h4-font-size !important; }
+  p { font-size: $mobile-p-font-size !important; }
 }
 
 
