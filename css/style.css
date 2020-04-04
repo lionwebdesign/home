@@ -66,6 +66,17 @@ body {
   background-attachment: fixed;
 }
 
+@media (max-width: 600px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/blur-cellphone-close-up-device-196646.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blur-cellphone-close-up-device-196646.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
 body nav {
   background-color: transparent;
   -webkit-box-shadow: none;

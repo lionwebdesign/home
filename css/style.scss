@@ -59,6 +59,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  @media (max-width: 600px) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/blur-cellphone-close-up-device-196646.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  }
   nav {
     background-color: transparent;
     box-shadow: none;
