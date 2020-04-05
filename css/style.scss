@@ -97,11 +97,18 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    // background-size: cover;
   }
   nav {
     background-color: transparent;
     box-shadow: none;
+    a.brand-logo {
+      max-width: 308px;
+      height: auto;
+      img.img-logo {
+        max-height: 60px;
+      }
+    }
     ul {
       li {
         a {
