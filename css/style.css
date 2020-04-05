@@ -36,6 +36,18 @@ p {
   }
 }
 
+.titulo {
+  color: white !important;
+}
+
+.subtitulo {
+  color: #d9d9d9 !important;
+}
+
+.texto-descriptivo {
+  color: #d9d9d9 !important;
+}
+
 html {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -68,8 +80,8 @@ body {
 
 @media (max-width: 600px) {
   body {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/blur-cellphone-close-up-device-196646.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blur-cellphone-close-up-device-196646.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url(../img/turned-on-gray-laptop-computer-on-table-699459.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/turned-on-gray-laptop-computer-on-table-699459.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -92,30 +104,42 @@ body nav ul li a:hover {
 }
 
 body .texto-principal {
-  color: white;
   text-align: center;
 }
 
 body .diferenciales {
-  color: white;
   padding: 25px;
 }
 
-body .diferenciales .col {
-  width: 33.333%;
+@media screen and (min-width: 901px) {
+  body .diferenciales .col {
+    width: 33.333%;
+  }
+  body .diferenciales .col .diferencial {
+    margin: auto !important;
+    width: 200px;
+  }
+  body .diferenciales .col .diferencial .img-diferencial {
+    margin: auto;
+    max-width: 150px;
+  }
 }
 
-body .diferenciales .col .diferencial {
-  margin: auto !important;
-  width: 200px;
+@media screen and (max-width: 900px) {
+  body .diferenciales .col {
+    width: 33.333%;
+  }
+  body .diferenciales .col .diferencial {
+    margin: auto !important;
+    width: 150px;
+  }
+  body .diferenciales .col .diferencial .img-diferencial {
+    margin: auto;
+    max-width: 100px;
+  }
 }
 
-body .diferenciales .col .diferencial .img-diferencial {
-  margin: auto;
-  max-width: 150px;
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body .diferenciales .col {
     margin-bottom: 25px;
     width: 100%;
@@ -128,10 +152,6 @@ body .diferenciales .col .diferencial .img-diferencial {
     margin: auto;
     max-width: 150px;
   }
-}
-
-body .action-call {
-  color: white;
 }
 
 body .page-footer {
@@ -150,5 +170,9 @@ body .page-footer .footer-copyright {
 
 body .page-footer .footer-copyright div a {
   color: #d9d9d9 !important;
+}
+
+#mc_embed_signup_scroll label {
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */

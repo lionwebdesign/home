@@ -2,6 +2,9 @@
 $color-primario: #262626;
 $color-secundario: #fff;
 $color-destaque: #ff671f;
+$color-titulo: white;
+$color-subtitulo: darken($color-titulo, 15%);
+$color-texto: darken($color-titulo, 15%);
 
 //caracteristicas del header
 
@@ -16,11 +19,21 @@ $footer-texto: white;
 //Ancho máximao de pantalla
 $larguraMaxTela: 1920px;
 
-h1 {font-size: 2.85rem !important;}
-h2 {font-size: 2rem !important;}
-h3 {font-size: 1.65rem !important;}
-h4 {font-size: 1.45rem !important;}
-p {font-size: 1.15rem !important;}
+h1 {
+  font-size: 2.85rem !important;
+}
+h2 {
+  font-size: 2rem !important;
+}
+h3 {
+  font-size: 1.65rem !important;
+}
+h4 {
+  font-size: 1.45rem !important;
+}
+p {
+  font-size: 1.15rem !important;
+}
 
 $mobile-h1-font-size: 1.8rem;
 $mobile-h2-font-size: 1.8rem;
@@ -28,13 +41,32 @@ $mobile-h3-font-size: 1.5rem;
 $mobile-h4-font-size: 1.25rem;
 $mobile-p-font-size: 1rem;
 @media (max-width: 600px) {
-  h1 { font-size: $mobile-h1-font-size !important; }
-  h2 { font-size: $mobile-h2-font-size !important; }
-  h3 { font-size: $mobile-h3-font-size !important; }
-  h4 { font-size: $mobile-h4-font-size !important; }
-  p { font-size: $mobile-p-font-size !important; }
+  h1 {
+    font-size: $mobile-h1-font-size !important;
+  }
+  h2 {
+    font-size: $mobile-h2-font-size !important;
+  }
+  h3 {
+    font-size: $mobile-h3-font-size !important;
+  }
+  h4 {
+    font-size: $mobile-h4-font-size !important;
+  }
+  p {
+    font-size: $mobile-p-font-size !important;
+  }
 }
 
+.titulo {
+  color: $color-titulo !important;
+}
+.subtitulo {
+  color: $color-subtitulo !important;
+}
+.texto-descriptivo {
+  color: $color-texto !important;
+}
 
 html {
   height: max-content;
@@ -60,12 +92,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   @media (max-width: 600px) {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/blur-cellphone-close-up-device-196646.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/turned-on-gray-laptop-computer-on-table-699459.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
   }
   nav {
     background-color: transparent;
@@ -83,13 +115,12 @@ body {
   }
 
   .texto-principal {
-    color: white;
     text-align: center;
   }
 
   .diferenciales {
-    color: white;
     padding: 25px;
+    @media screen and (min-width: 901px) {
     .col {
       width: 33.333%;
       .diferencial {
@@ -100,8 +131,23 @@ body {
           max-width: 150px;
         }
       }
+      }
+      
     }
-    @media(max-width: 600px) {
+    @media screen and (max-width: 900px) {
+      .col {
+        width: 33.333%;
+        .diferencial {
+          margin: auto !important;
+          width: 150px;
+          .img-diferencial {
+            margin: auto;
+            max-width: 100px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
       .col {
         margin-bottom: 25px;
         width: 100%;
@@ -117,28 +163,35 @@ body {
     }
   }
 
-  .action-call {
-    color: white;
-  }
+  // .action-call {
+  //   color: white;
+  // }
 
-  .page-footer{
-      background-color: $footer !important;
+  .page-footer {
+    background-color: $footer !important;
+    color: $footer-texto !important;
+    ul {
+      li {
+        a {
+          color: darken($footer-texto, 15%) !important;
+        }
+      }
+    }
+    .footer-copyright {
+      background-color: darken($footer, 15%) !important;
       color: $footer-texto !important;
-      ul {
-          li{
-              a{
-                  color: darken($footer-texto, 15%) !important;
-              }
-          }
+      div {
+        a {
+          color: darken($footer-texto, 15%) !important;
+        }
       }
-      .footer-copyright {
-          background-color: darken($footer, 15%) !important;
-          color: $footer-texto !important;
-          div {
-              a {
-                color: darken($footer-texto, 15%) !important;
-              }
-          }
-      }
+    }
+  }
+}
+
+//Mailchimp home
+#mc_embed_signup_scroll {
+  label {
+  color: $color-titulo !important;
   }
 }
