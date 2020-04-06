@@ -7,7 +7,7 @@ $(document).ready(function () {
     /*Cambia el color del div cuando es distinto a 0*/
     if (scroll != 0) {
       $("#nav-dinamico").css({
-        background: "rgba(255, 255, 255, 0.95)",
+        background: "rgba(38, 38, 38, 0.95)",
       });
     } else {
       $("#nav-dinamico").css({

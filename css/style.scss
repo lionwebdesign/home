@@ -1,7 +1,8 @@
 //Colores principales
-$color-primario: #63908f;
-$color-secundario: #8dd8f8;
-$color-destaque: #ff671f;
+$color-primario: #262626;//#63908f;
+$color-secundario: #63908f;
+$color-terceario: #8dd8f8;
+$color-destaque: #8dd8f8;//#ff671f;
 $color-titulo: white;
 $color-subtitulo: darken($color-titulo, 15%);
 $color-texto: darken($color-titulo, 15%);
@@ -9,14 +10,15 @@ $color-texto: darken($color-titulo, 15%);
 //caracteristicas del header
 
 //$header: $color-primario; // Color del header (No funciona, el js define el color)
-$header-texto: $color-primario; //Color del texto del header
+$header-texto: $color-terceario;//$color-primario; //Color del texto del header
+$header-texto-hover: darken($header-texto, 15%);
 
 //caracteristicas del footer
 
 $footer: $color-primario;
-$footer-texto: white;
+$footer-texto: $color-terceario;//white;
 $footer-sociales: $footer-texto; //Color de los iconos de redes sociales
-$footer-sociales-hover: $color-destaque; //Color de los iconos de redes sociales hover
+$footer-sociales-hover: darken($footer-sociales, 15%); //Color de los iconos de redes sociales hover
 
 //Ancho máximao de pantalla
 $larguraMaxTela: 1920px;
@@ -114,15 +116,23 @@ body {
     ul {
       li {
         a {
-          color: $header-texto;
+          color: $header-texto !important;
           &:hover {
-            color: $color-secundario;
+            color: $header-texto-hover !important;
           }
         }
       }
     }
     .sidenav-trigger {
-      color: $color-primario;
+      color: $header-texto !important;
+    }
+    .navbar-fixed {
+      position: relative;
+      height: 56px;
+      z-index: 998;
+    }
+    .sidenav {
+      background-color: $color-primario !important;
     }
   }
 
@@ -133,18 +143,17 @@ body {
   .diferenciales {
     padding: 25px;
     @media screen and (min-width: 901px) {
-    .col {
-      width: 33.333%;
-      .diferencial {
-        margin: auto !important;
-        width: 200px;
-        .img-diferencial {
-          margin: auto;
-          max-width: 150px;
+      .col {
+        width: 33.333%;
+        .diferencial {
+          margin: auto !important;
+          width: 200px;
+          .img-diferencial {
+            margin: auto;
+            max-width: 150px;
+          }
         }
       }
-      }
-      
     }
     @media screen and (max-width: 900px) {
       .col {
@@ -188,40 +197,40 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-    ul {
-      li {
-        p {
-          color: darken($footer-texto, 15%) !important;
-          margin-top: 5px;
-          margin-bottom: 5px;
+      ul {
+        li {
+          p {
+            color: $footer-texto !important;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .icones-sociais {
+        margin: 0px;
+        li {
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          position: relative;
+          overflow: hidden;
+          .fa {
+            font-size: 24px;
+            color: $footer-sociales;
+            position: relative;
+            z-index: 2;
+            line-height: 40px;
+            transition: all 0.2s ease;
+          }
+          &:hover {
+            .fa {
+              color: $footer-sociales-hover;
+              transition: all 0.4s ease;
+            }
+          }
         }
       }
     }
-    .icones-sociais {
-      margin: 0px;
-      li {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        position: relative;
-        overflow: hidden;
-      .fa {
-        font-size: 24px;
-        color: $footer-sociales;
-        position: relative;
-        z-index: 2;
-        line-height: 40px;
-        transition: all 0.2s ease;
-      }
-      &:hover {
-        .fa {
-          color: $footer-sociales-hover;
-          transition: all 0.4s ease;
-        }
-      }
-    }
-  }
-  }
     .footer-copyright {
       background-color: darken($footer, 15%) !important;
       color: $footer-texto !important;
@@ -245,6 +254,6 @@ body {
 //Mailchimp home
 #mc_embed_signup_scroll {
   label {
-  color: $color-titulo !important;
+    color: $color-titulo !important;
   }
 }
