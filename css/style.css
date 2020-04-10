@@ -59,6 +59,14 @@ html body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 html body #content {
@@ -87,6 +95,12 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
   }
+}
+
+body main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 body nav {

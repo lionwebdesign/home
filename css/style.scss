@@ -79,6 +79,9 @@ html {
     overflow-x: hidden;
     max-width: $larguraMaxTela;
     margin: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     #content {
       height: 100%;
       display: flow-root;
@@ -102,6 +105,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: 100% 100%;
+  }
+  main {
+    flex: 1 0 auto;
   }
   nav {
     background-color: transparent;
