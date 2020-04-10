@@ -78,6 +78,25 @@ html body #content .row {
   padding-top: 0px;
 }
 
+.btn,
+.btn-large {
+  background-color: #8dd8f8 !important;
+  color: #262626 !important;
+  margin: 20px;
+}
+
+.btn:hover,
+.btn-large:hover {
+  background-color: #45bff4 !important;
+  color: white !important;
+}
+
+.btn:active,
+.btn-large:active {
+  background-color: #8dd8f8;
+  color: #262626 !important;
+}
+
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/blur-cellphone-close-up-device-196646.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blur-cellphone-close-up-device-196646.jpg);
@@ -265,6 +284,15 @@ body .page-footer .whatsapp {
 }
 
 #mc_embed_signup_scroll label {
-  color: white !important;
+  color: #8dd8f8 !important;
+}
+
+#mc_embed_signup_scroll input {
+  color: #8dd8f8 !important;
+  border-bottom: 1px solid #8dd8f8 !important;
+}
+
+#mc_embed_signup_scroll div.indicates-required {
+  color: #8dd8f8 !important;
 }
 /*# sourceMappingURL=style.css.map */

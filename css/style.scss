@@ -1,8 +1,8 @@
 //Colores principales
-$color-primario: #262626;//#63908f;
+$color-primario: #262626; //#63908f;
 $color-secundario: #63908f;
 $color-terceario: #8dd8f8;
-$color-destaque: #8dd8f8;//#ff671f;
+$color-destaque: #8dd8f8; //#ff671f;
 $color-titulo: white;
 $color-subtitulo: darken($color-titulo, 15%);
 $color-texto: darken($color-titulo, 15%);
@@ -10,15 +10,18 @@ $color-texto: darken($color-titulo, 15%);
 //caracteristicas del header
 
 //$header: $color-primario; // Color del header (No funciona, el js define el color)
-$header-texto: $color-terceario;//$color-primario; //Color del texto del header
+$header-texto: $color-terceario; //$color-primario; //Color del texto del header
 $header-texto-hover: darken($header-texto, 15%);
 
 //caracteristicas del footer
 
 $footer: $color-primario;
-$footer-texto: $color-terceario;//white;
+$footer-texto: $color-terceario; //white;
 $footer-sociales: $footer-texto; //Color de los iconos de redes sociales
-$footer-sociales-hover: darken($footer-sociales, 15%); //Color de los iconos de redes sociales hover
+$footer-sociales-hover: darken(
+  $footer-sociales,
+  15%
+); //Color de los iconos de redes sociales hover
 
 //Ancho máximao de pantalla
 $larguraMaxTela: 1920px;
@@ -89,6 +92,21 @@ html {
         padding-top: 0px;
       }
     }
+  }
+}
+
+.btn,
+.btn-large {
+  background-color: $color-destaque !important;
+  color: $color-primario !important;
+  margin: 20px;
+  &:hover {
+    background-color: darken($color-destaque, 15%) !important;
+    color: white !important;
+  }
+  &:active {
+    background-color: $color-destaque;
+    color: $color-primario !important;
   }
 }
 
@@ -260,6 +278,14 @@ body {
 //Mailchimp home
 #mc_embed_signup_scroll {
   label {
-    color: $color-titulo !important;
+    color: $footer-texto !important;
+  }
+  input {
+    color: $footer-texto !important;
+    border-bottom: 1px solid $footer-texto !important;
+  }
+  div.indicates-required {
+    color: $color-destaque !important;
+    //span.asterisk
   }
 }
